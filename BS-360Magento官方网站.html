@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BS-360Magento官方网站</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cssreset.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+/*导航条*/
+
+        .nav img{
+            height: 50px;
+        }
+        .nav .text{
+            padding: 10px 0;
+        }
+        .nav .navbar-toggle{
+            height: 50px;
+        }
+        .nomargin{
+            margin-bottom: 0;
+        }
+
+
+        /*大屏图*/
+        .bigimg {
+            width: 100%;
+            /*height: 650px;*/
+        }
+
+
+
+/*con1*/
+        .con1 > h2 {
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .con1 > span {
+            display: inline-block;
+            width: 60px;
+            height: 20px;
+            border-top: 3px solid #21b8ed;
+        }
+
+        .con1 > p {
+            font-size: 20px;
+            color: #303c40;
+        }
+
+/*con2*/
+        .con2 {
+            overflow: hidden;
+        }
+
+        .con2 .row> div {
+            text-align: center;
+            float: left;
+            margin-top: 50px;
+        }
+
+        .con2 .row> .div1 h2 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 0.54em;
+        }
+
+        .con2 .row> div img {
+            height: 50px;
+        }
+
+        .con2 .tupian {
+            margin: 10px;
+        }
+
+/*con3*/
+        /*.con3 {
+            height: 600px;
+        }*/
+
+        .con3 .row>div h2 {
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .con3 .row>div hr {
+            width: 60px;
+            border-top: 3px solid #21b8ed;
+            margin: 10px auto;
+        }
+
+        .con3 .row> .left {
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .con3 .row> .left p {
+            width: 100%;
+            text-align: left;
+            margin: 0 0 1em;
+        }
+
+        .con3 .text strong {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .con3 .row> .right {
+            float: left;
+        }
+
+        .con3 .row> .left .item {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .con3 .item li > span {
+            color: #21b8ed;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .con3 .row> .left .item li {
+            padding-bottom: 10px;
+            font-size: 15px;
+        }
+
+/*con4*/
+        .con4 {
+            background: #f26322;
+        }
+
+        .con4 > .div1 > h2 {
+            color: #fff;
+            padding-top: 5px;
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .con4 > .div1 > hr {
+            width: 60px;
+            border-top: 3px solid #fff;
+            margin: 10px auto;
+        }
+
+        .con4 > .div1 > p {
+            font-size: 20px;
+            color: #303c40;
+            margin: 0 0 1em;
+        }
+
+        .features-list {
+            margin-bottom: 50px;
+        }
+
+        .features-list .tupian {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+        }
+
+        .features-list .tupian > img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .features-list .text > h2 {
+            color: #fff;
+            padding-top: 5px;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 0.54em;
+        }
+
+        .features-list .text > p {
+            margin: 0 0 1em;
+            font: 14px/24px microsoft yahei;
+            color: #333;
+        }
+
+/*con5*/
+
+        .con5 .recently {
+            font-size: 36px;
+            line-height: 48px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .con5 hr {
+            width: 60px;
+            border-top: 3px solid #21b8ed;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .con5 .text-center {
+            font-size: 20px;
+            color: #303c40;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .con5 > ul li {
+            padding: 10px;
+        }
+
+        /*con6*/
+        .con6 {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            background: rgba(33, 184, 237, 0.8);
+        }
+
+        .con6 .left > h2 {
+            font-size: 36px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .con6 .right {
+            text-align: center;
+        }
+
+        .con6 .right > .btn {
+            background: #fff;
+        }
+
+/*con7*/
+        .con7 {
+            padding: 42px 0 57px;
+            color: #fff;
+            width: 100%;
+            /*height: 500px;*/
+            background: #2F2B2F;
+        }
+        .con7 .con7-title{
+            margin-bottom: 25px;
+            font-size: 18px;
+        }
+        .con7 .ul1 li{
+            display: block;
+            width: 150px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 3px;
+            border: 2px solid #fff;
+            margin: 20px 0;
+        }
+        .con7 .ul1 li:nth-of-type(1){
+                   color: #f26322;
+               }
+        .con7 .ul1 li:nth-of-type(2){
+            border-color:  #f26322;
+        }
+        .con7 .ul2 li>p{
+            font-size: 12px;
+            color: #939393;
+            margin: 10px 0;
+        }
+        .con7 .ul3 li{
+            margin-top: 20px;
+        }
+        .con7 .ul3 li>span{
+            margin: 0 10px 0 0;
+        }
+        .con7 .ul4 li{
+            margin-top: 10px;
+        }
+        .con7 .footer{
+            border-top: 1px solid #343434;
+            margin-top: 100px;
+            padding: 5px;
+        }
+
+        /*@media only screen and(max-width: 767px) {*/
+            /*.con7 .con7-title{*/
+                /*font-size: 22px;*/
+            /*}*/
+        /*}*/
+        /*@media only screen and(min-width: 768px) {*/
+            /*.con7 .con7-title{*/
+                /*font-size: 14px;*/
+            /*}*/
+        /*}*/
+        /*@media only screen and (max-width: 767px){*/
+            /*.con7 .con7-title{*/
+                /*border-bottom: 1px solid #ddd;*/
+                /*padding: 10px 0;*/
+                /*margin: 0;*/
+            /*}*/
+            /*.con7 ul li{*/
+                /*display: none;*/
+            /*}*/
+        /*}*/
+
+
+
+        @media (max-width: 768px) {
+            .con7  li {
+                display: none;
+            }
+            .con7 #none1,.con7 #none2 {
+                display: none;
+            }
+            .con7 ul {
+                border-bottom: 1px solid #fff;
+               margin: 10px 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<!--导航条-->
+<!--<nav class="navbar navbar-default nomargin">
+    <div class="container">
+        <div class="navbar-header">
+            <h1>
+                <img src="images/logo.png" alt="">
+            </h1>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse div1" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Magento服务</a></li>
+                <li><a href="#">精选案例</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">博客</a></li>
+                <button class="btn btn-lg btn-info">联系我们</button>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+
+<nav class="navbar navbar-default nav nomargin">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="img-responsive" alt="Responsive image"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse text" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Magento服务 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Magento网站设计</a></li>
+                        <li><a href="#">Magento网站开发</a></li>
+                        <li><a href="#">Magento迁移</a></li>
+                        <li><a href="#">Magento性能优化</a></li>
+                        <li><a href="#">Magento App开发</a></li>
+                        <li><a href="#">Magento技术支持</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">精选案例</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--大屏图-->
+<div class="bigimg ">
+    <img  class="img-responsive" src="images/slide04.jpg" alt="">
+</div>
+<!--con1-->
+<div class="container con1 text-center">
+    <h2>专业的Magento服务</h2>
+    <span></span>
+    <p>6年专注和沉淀，只为更好的满足您的个性化需求</p>
+</div>
+<!--con2-->
+<div class=" container con2">
+    <div class="row">
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/01.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/02.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/03.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/04.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/05.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/06.png" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/07.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+        <div class="div1 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="tupian"><img src="images/08.gif" alt=""></div>
+            <h2>Magento网站设计</h2>
+            <p>网站设计是品牌形象，要做到 <br>
+                简洁、美学、兼容</p>
+        </div>
+    </div>
+</div>
+<!--con3-->
+<div class="container con3 text-center">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>我们是谁？</h2>
+            <hr>
+        </div>
+        <div class="left col-md-6 col-sm-12 col-xs-12">
+            <div class="text">
+                <p><strong>360Magento</strong>是一家基于Magento系统的第三方技术服务商（成立于2012年）。我们提供全面的Magento开发服务，尤其是Magento网站开发和Magento移动商城(APP,微信商城，微信小程序)。我们的目标不仅是成为知名的在线电商解决方案提供商，在当今竞争激烈的电子商务市场上，我们更希望能成为所有电子商务企业的理想伴侣。
+                </p>
+                <p><strong>愿景:</strong> 成为全球领先的电子商务解决方案提供商.</p>
+                <p><strong>使命: </strong>帮助全球所有电子商务企业高效，稳健地运营.</p>
+            </div>
+            <ul class="item">
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+                <li><span>√</span>Magento 外贸B2B2C</li>
+            </ul>
+        </div>
+        <div class="right col-md-6 col-sm-12 col-xs-12">
+            <img src="images/company01-home.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+<!--con4-->
+<div class="container-fluid con4">
+    <div class="div1 text-center">
+        <h2>360Magento有何与众不同?</h2>
+        <hr>
+        <p>被销售忽悠？团队不够专业？项目质量和售后没保障？在我们这儿不存在.</p>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 features-list">
+                <div class="tupian">
+                    <img src="images/09.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>技术总监接待</h2>
+                    <p>每一位客户的问题和需求都将得到技术总监的专业解答和出解决方案，可以跟其他公司“一问三不知”的销售说拜拜了。</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 features-list">
+                <div class="tupian">
+                    <img src="images/10.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>技术总监接待</h2>
+                    <p>每一位客户的问题和需求都将得到技术总监的专业解答和出解决方案，可以跟其他公司“一问三不知”的销售说拜拜了。</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 features-list">
+                <div class="tupian">
+                    <img src="images/11 .png" alt="">
+                </div>
+                <div class="text">
+                    <h2>技术总监接待</h2>
+                    <p>每一位客户的问题和需求都将得到技术总监的专业解答和出解决方案，可以跟其他公司“一问三不知”的销售说拜拜了。</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 features-list">
+                <div class="tupian">
+                    <img src="images/12.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>技术总监接待</h2>
+                    <p>每一位客户的问题和需求都将得到技术总监的专业解答和出解决方案，可以跟其他公司“一问三不知”的销售说拜拜了。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--con5-->
+<div class="container con5">
+    <div class="col-md-12">
+        <h2 class="recently">最近的案例</h2>
+        <hr>
+        <p class="text-center">以下是我们所做的一些优秀项目。下一个可能是你的项目！</p>
+    </div>
+    <ul class="row">
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/01_01_1.jpg" alt=""></a>
+        </li>
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/01_1_2.jpg" alt=""></a>
+        </li>
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/01_1_3.jpg" alt=""></a>
+        </li>
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/01-1_4.jpg" alt=""></a>
+        </li>
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/01_1_5.jpg" alt=""></a>
+        </li>
+        <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+            <a href="#"><img class="img-responsive" src="images/small_6.jpg" alt=""></a>
+        </li>
+    </ul>
+</div>
+<!--con6-->
+<div class="con6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 left">
+                <h2>想找专业的Magento开发团队？</h2>
+            </div>
+            <div class="col-md-4 right">
+                <button class="btn btn-lg">联系我们</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--con7-->
+<div class="con7">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <h4 class="con7-title">Magento站点演示</h4>
+                <ul class="ul1">
+                    <li id="none1"><span>Magento1.9示例站点</span></li>
+                    <li id="none2"><span>Magento2.2示例站点</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h4 class="con7-title">最新动态</h4>
+                <ul class="ul2">
+                    <li>
+                        Magento 2 Demo 在线演示
+                        <p>2019/3/13 下午7:23</p>
+                    </li>
+                    <li>
+                        升级到Magento2的十大常见问题
+                        <p>2019/3/4 下午3:13</p>
+                    </li>
+                    <li>
+                        Magento 1迁移到Magento2有什么好处？
+                        <p>2019/3/1 下午3:16</p>
+                    </li>
+                    <li>
+                        如何建立Magento电商网站？分步指南
+                        <p>2019/2/25 下午6:05</p>
+                    </li>
+                    <li>
+                        Magento电子商务发展的20大优势
+                        <p>2019/1/10 下午5:59</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h4 class="con7-title">帮助中心</h4>
+                <ul class="ul3">
+                    <li>
+                        <span>&gt;</span>
+                            我们的服务
+                    </li>
+                    <li>
+                        <span>&gt;</span>
+                        客户服务
+                    </li>
+                    <li>
+                        <span>&gt;</span>
+                        关于我们
+                    </li>
+                    <li>
+                        <span>&gt;</span>
+                        新闻资讯
+                    </li>
+                    <li>
+                        <span>&gt;</span>
+                        联系我们
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h4 class="con7-title">联系我们</h4>
+                <ul class="ul4">
+                    <li>
+                        × 武汉市东湖开发区民族大道1号光谷大厦
+                    </li>
+                    <li>
+                        × 13125097698 (微信同号)
+                    </li>
+                    <li>
+                        × 1363987338
+                    </li>
+                    <li>
+                        × sales@360magento.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container footer">
+        <p>© 2019 武汉奥微立网络科技有限公司 版权所有. 备案号：鄂ICP备15010458号-1</p>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
